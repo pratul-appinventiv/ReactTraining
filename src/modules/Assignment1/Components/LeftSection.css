@@ -1,0 +1,38 @@
+.leftSectionContent {
+  background-color: #5046b8;
+  width: 308px;
+  color: #fff;
+  padding: 40px 0 0 41px;
+  border-radius: 17px;
+}
+
+.leftSectionContent h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.leftSectionContent .boldText {
+  font-weight: bold;
+}
+
+.leftSectionContent p {
+  font-size: 13.5px;
+  line-height: 1.4;
+  word-spacing: 2px;
+  margin-top: 20px;
+}
+
+.leftSectionContent .firstPara {
+  width: 217px;
+}
+
+.leftSectionContent .secondPara {
+  width: 228px;
+}
+
+.leftSectionContent img {
+  width: 154px;
+  height: 188px;
+  margin: 91px 0 0 27px;
+}

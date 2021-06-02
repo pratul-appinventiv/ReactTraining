@@ -1,0 +1,181 @@
+.box1Container {
+  width: 338px;
+  background-color: #f2f5fb;
+  padding: 30px 37px 5px 23px;
+  border-radius: 17px;
+  margin-right: 34px;
+}
+
+.box2Container {
+  width: 338px;
+  background-color: #2f23ac;
+  color: #fff;
+  padding: 30px 33px 5px 23px;
+  border-radius: 17px;
+}
+
+.box1Header {
+  overflow: hidden;
+}
+
+.box1HeaderLeft {
+  float: left;
+}
+
+.box2HeaderLeft {
+  float: left;
+}
+
+.box1HeaderLeft h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.box2HeaderLeft h3 {
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.box1HeaderLeft span {
+  display: inline-block;
+  width: 20px;
+  border: 2px solid #5046b8;
+}
+
+.box2HeaderLeft span {
+  display: inline-block;
+  width: 20px;
+  border: 2px solid #fff;
+}
+
+.box1HeaderRight {
+  float: right;
+  text-align: right;
+}
+
+.box2HeaderRight {
+  float: right;
+  text-align: right;
+}
+
+.box1HeaderRight h4 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.box2HeaderRight h4 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+.box1HeaderRight span {
+  font-size: 14px;
+  color: #b9babe;
+}
+
+.box2HeaderRight span {
+  font-size: 14px;
+  color: #fff;
+}
+
+.box1Content {
+  margin-top: 31px;
+}
+
+.box2Content {
+  margin-top: 31px;
+}
+
+.box1Content h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box2Content h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.box1Content ul {
+  list-style-type: none;
+}
+
+.box2Content ul {
+  list-style-type: none;
+}
+
+.box1Content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 17px;
+}
+
+.box2Content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 17px;
+}
+
+.box1Content p {
+  font-size: 15px;
+}
+
+.box2Content p {
+  font-size: 15px;
+}
+
+.box1Content i {
+  font-size: 15px;
+  color: #8a83c8;
+  margin-right: 18px;
+  margin-top: 3px;
+}
+
+.box2Content i {
+  font-size: 15px;
+  color: #fff;
+  margin-right: 18px;
+  margin-top: 3px;
+}
+
+.box1Footer {
+  margin-top: 113px;
+  text-align: center;
+}
+
+.box2Footer {
+  margin-top: 76px;
+  text-align: center;
+}
+
+.box1Footer h6 {
+  font-size: 10px;
+}
+
+.box2Footer h6 {
+  font-size: 10px;
+}
+
+.box1Footer .btn button {
+  width: 208px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  background-color: #5046b8;
+  border: hidden;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.box2Footer .btn button {
+  width: 208px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  background-color: #fff;
+  border: hidden;
+  color: #000;
+  border-radius: 10px;
+}

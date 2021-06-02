@@ -1,0 +1,24 @@
+.rightSectionHeader {
+  overflow: hidden;
+}
+
+.rightSectionHeader .heading {
+  float: left;
+  font-size: 30px;
+  font-weight: 390;
+  letter-spacing: 2px;
+}
+
+.rightSectionHeader .headingBold {
+  font-weight: bold;
+}
+
+.rightSectionHeader .contactText {
+  float: right;
+  text-align: right;
+}
+
+.rightSectionHeader .contactText span {
+  color: #3e33ae;
+  font-size: 11.5px;
+}
