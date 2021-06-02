@@ -22,7 +22,7 @@ class LeftSection extends Component {
             "Start your 14 days of free Pro plan, you can always upgrade it or stay with the Lite version for free."
           }
         </p>
-        <img src={LeftSectionImg} alt="leftBoxImg" />
+        <img src={LeftSectionImg} alt={"leftBoxImg"} />
       </div>
     );
   }

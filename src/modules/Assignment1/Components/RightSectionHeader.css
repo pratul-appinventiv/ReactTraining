@@ -16,9 +16,10 @@
 .rightSectionHeader .contactText {
   float: right;
   text-align: right;
+  font-size: 14px;
 }
 
 .rightSectionHeader .contactText span {
   color: #3e33ae;
-  font-size: 11.5px;
+  font-size: 14px;
 }

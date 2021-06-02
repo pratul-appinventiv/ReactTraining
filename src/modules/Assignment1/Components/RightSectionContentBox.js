@@ -19,19 +19,19 @@ class RightSectionContentBox extends Component {
           <h2>{this.props.box1.pointsHeading}</h2>
           <ul>
             <li>
-              <i className={" fa fa-check"} aria-hidden="true"></i>
+              <i className={" fa fa-check"} aria-hidden={"true"}></i>
               <p>{this.props.box1.point1}</p>
             </li>
             <li>
-              <i className={" fa fa-check"} aria-hidden="true"></i>
+              <i className={" fa fa-check"} aria-hidden={"true"}></i>
               <p>{this.props.box1.point2}</p>
             </li>
             <li>
-              <i className={" fa fa-check"} aria-hidden="true"></i>
+              <i className={" fa fa-check"} aria-hidden={"true"}></i>
               <p>{this.props.box1.point3}</p>
             </li>
             <li>
-              <i className={" fa fa-check"} aria-hidden="true"></i>
+              <i className={" fa fa-check"} aria-hidden={"true"}></i>
               <p>{this.props.box1.point4}</p>
             </li>
           </ul>
