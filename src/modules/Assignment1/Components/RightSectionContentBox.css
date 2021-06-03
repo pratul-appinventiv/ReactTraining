@@ -166,6 +166,7 @@
   border: hidden;
   color: #fff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .box2Footer .btn button {
@@ -178,4 +179,5 @@
   border: hidden;
   color: #000;
   border-radius: 10px;
+  cursor: pointer;
 }

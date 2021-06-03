@@ -15,10 +15,12 @@ class RightSectionContent extends Component {
       headingRightUpper: "Free",
       headingRightBottom: "with restrictions",
       pointsHeading: "Plan Includes:",
-      point1: "Manage conversations directly from your website.",
-      point2: "Bot without the AI service.",
-      point3: "Achieved chat for 30 days",
-      point4: "Free, for always",
+      points: [
+        "Manage conversations directly from your website.",
+        "Bot without the AI service.",
+        "Achieved chat for 30 days",
+        "Free, for always",
+      ],
     };
 
     const box2 = {
@@ -32,11 +34,12 @@ class RightSectionContent extends Component {
       headingRightUpper: "29$",
       headingRightBottom: "monthly",
       pointsHeading: "All of lite plus:",
-      point1:
+      points: [
         "Bot with AI that can recognize the user's behaviour and can automatize the sentences.",
-      point2: "Unlimited conversational flows.",
-      point3: "Facebook,Twitter,Instagram and Linkedin integration",
-      point4: "Achieved chat without limits.",
+        "Unlimited conversational flows.",
+        "Facebook,Twitter,Instagram and Linkedin integration",
+        "Achieved chat without limits.",
+      ],
     };
 
     return (

@@ -18,22 +18,14 @@ class RightSectionContentBox extends Component {
         <div className={this.props.box1.boxContent}>
           <h2>{this.props.box1.pointsHeading}</h2>
           <ul>
-            <li>
-              <i className={" fa fa-check"} aria-hidden={"true"}></i>
-              <p>{this.props.box1.point1}</p>
-            </li>
-            <li>
-              <i className={" fa fa-check"} aria-hidden={"true"}></i>
-              <p>{this.props.box1.point2}</p>
-            </li>
-            <li>
-              <i className={" fa fa-check"} aria-hidden={"true"}></i>
-              <p>{this.props.box1.point3}</p>
-            </li>
-            <li>
-              <i className={" fa fa-check"} aria-hidden={"true"}></i>
-              <p>{this.props.box1.point4}</p>
-            </li>
+            {this.props.box1.points.map((curr, ind) => {
+              return (
+                <li>
+                  <i className={" fa fa-check"} aria-hidden={"true"}></i>
+                  <p>{curr}</p>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className={this.props.box1.boxFooter}>
