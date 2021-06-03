@@ -1,12 +1,9 @@
-import React, { Component } from "react";
-import Assignment1 from "./modules/Assignment1";
-import Home from "./modules/home"
+import React from "react";
+import Assignment2 from "./modules/Assignment2";
 import "./App.css";
 
-class App extends Component {
+export default class App extends React.Component {
   render() {
-    return <Home />;
+    return <Assignment2 />;
   }
 }
-
-export default App;
