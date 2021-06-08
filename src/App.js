@@ -1,9 +1,9 @@
 import React from "react";
-import Assignment4Grid from "./modules/Assignment4/Assignment4Grid";
+import Assignment3 from "./modules/Assignment3";
 import "./App.css";
 
 export default class App extends React.Component {
   render() {
-    return <Assignment4Grid/>;
+    return <Assignment3/>;
   }
 }

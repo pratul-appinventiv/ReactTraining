@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* @font-face {
+@font-face {
   font-family: CircularStd-medium;
   src: url("./Assignment3Fonts/Circular-Std-Font/Circular\ Std\ Medium.ttf");
 }
@@ -22,7 +22,7 @@
 @font-face {
   font-family: AkkuratPro-regular;
   src: url("./Assignment3Fonts/AkkuratPro/AkkuratPro-Regular.otf");
-} */
+}
 
 :root {
   --blue-grey: #637696;

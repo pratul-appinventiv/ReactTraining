@@ -1,0 +1,1117 @@
+.mainContainer {
+  width: 1805px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, var(--ice-blue), #ffffff 61%);
+}
+
+/* CSS for header section */
+
+.headContainer {
+  display: flex;
+  align-items: center;
+  height: 106px;
+  padding: 0 0 0px 307px;
+}
+
+.logoContainer {
+  margin: 5px 10px 4px 53px;
+}
+
+.logoContainer img {
+  height: 35px;
+}
+
+.headContainer span {
+  width: 1px;
+  height: 32px;
+  margin: 0 20px 0 40px;
+  opacity: 0.15;
+  background-color: #abb5c7;
+}
+
+.optionContainer {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+.optionContainer li {
+  margin: 0 0 0 36px;
+}
+
+.optionContainer a {
+  text-decoration: none;
+  font-family: AkkuratPro-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--dark-grey-blue);
+}
+
+.optionContainer a:hover {
+  color: var(--cerulean);
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 172px;
+}
+
+.buttonContainer Select {
+  width: 49px;
+  border: hidden;
+  font-family: AkkuratPro-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--dark-grey-blue);
+  background-image: linear-gradient(to bottom, var(--ice-blue), #ffffff 252%);
+}
+
+.buttonContainer .Login {
+  width: 110px;
+  height: 46px;
+  margin: 0 20px 0 23px;
+  padding: 11px 35px 15px;
+  border-radius: 23px;
+  border: solid 2px var(--cerulean-10);
+  background-image: linear-gradient(to bottom, var(--ice-blue), #ffffff 201%);
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--cerulean);
+  cursor: pointer;
+}
+
+.buttonContainer .Sign {
+  width: 114px;
+  height: 46px;
+  padding: 13px 28px 15px;
+  border: hidden;
+  border-radius: 23px;
+  background-color: var(--cerulean-10);
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: 1px;
+  color: var(--cerulean);
+  cursor: pointer;
+}
+
+/* CSS for section1  */
+
+.section1Container {
+  display: flex;
+  align-items: center;
+  margin-left: 42px;
+}
+
+.section1Container .content {
+  width: 581px;
+  margin-left: 314px;
+}
+
+.content h1 {
+  width: 596px;
+  height: 53px;
+  margin: 98px 76px 39px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.49;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.content h2 {
+  width: 518px;
+  height: 42px;
+  margin: 39px 154px 39px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.content p {
+  width: 547px;
+  height: 107px;
+  margin: 39px 125px 39px 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.cryptoConvert {
+  width: 491px;
+  height: 448px;
+  margin: 26px 0 11px 111px;
+  padding: 33px 0 45px 37px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px 0 rgb(37 119 167 / 11%);
+  background-color: #ffffff;
+}
+
+.cryptoConvert h2 {
+  height: 40px;
+  margin: 0 0 29px 81px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.cryptoConvert .buySellButtons {
+  margin-left: 13px;
+}
+
+.buySellButtons .buy {
+  width: 196px;
+  background-color: #fff;
+  color: var(--cerulean);
+  border-radius: 10px 0 0 10px;
+  padding: 16px 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px solid var(--cerulean-30);
+}
+
+.buySellButtons .sell {
+  width: 196px;
+  background-color: #fff;
+  color: #000000;
+  border-radius: 0 10px 10px 0;
+  padding: 16px 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: 2px solid rgba(58, 78, 111, 0.15);
+  border-left: hidden;
+}
+
+.cryptoConvert .curr1Field {
+  border-bottom: 1px solid rgba(58, 78, 111, 0.25);
+  margin-top: 25px;
+  padding-bottom: 25px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.curr1Field img {
+  width: 27px;
+  height: 26px;
+
+  margin-right: 44px;
+}
+
+.curr1Field select {
+  border: hidden;
+  width: 97px;
+  padding-left: 16px;
+  height: 44px;
+  margin-left: 185px;
+  border-left: 1px solid rgba(58, 78, 111, 0.15);
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.curr2Field {
+  margin-top: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.curr2Field img {
+  margin-right: 20px;
+}
+
+.curr2Field select {
+  border: hidden;
+  width: 101px;
+  padding-left: 19px;
+  height: 44px;
+  margin-left: 67px;
+  height: 44px;
+
+  border-left: 1px solid rgba(58, 78, 111, 0.15);
+  background-color: #fff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.cryptoConvert .doge {
+  width: 374px;
+  height: 64px;
+  margin: 45px 0 0 15px;
+  padding: 20px 121px 21px 130px;
+  border-radius: 32px;
+  box-shadow: 0 2px 4px 0 rgba(103, 194, 6, 0.3);
+  background-color: var(--dark-lime-green);
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: 1px;
+  color: #ffffff;
+  border: hidden;
+  cursor: pointer;
+}
+
+/* CSS for section 2 */
+
+.section2Container {
+  position: relative;
+  height: 437px;
+  margin-top: 119px;
+}
+
+.section2Container .card1 {
+  position: absolute;
+  top: 0;
+  left: 383px;
+  width: 331.6px;
+  height: 198.4px;
+  padding: 20.3px 0 26.9px 29.6px;
+  border-radius: 32.5px;
+  box-shadow: 0 3px 16px 0 var(--black-5);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #fff6f6;
+}
+
+.card1 p {
+  font-size: 37px;
+  color: var(--blue-grey);
+  margin-left: 3px;
+}
+
+.card1 p span {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.card1 .cardHolder {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.card1 .cardFields {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.card1 .cardExpiry {
+  margin-left: 158px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.card1 .cardValues {
+  display: flex;
+  align-items: center;
+}
+
+.card1 .holderName {
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.card1 .expiryDate {
+  margin-left: 126px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.section2Container .card2 {
+  position: absolute;
+  top: 30px;
+  left: 670px;
+  width: 415.2px;
+  height: 248.4px;
+
+  padding: 25.6px 0 34.5px 36.3px;
+  border-radius: 32.5px;
+  box-shadow: 0 3px 16px 0 var(--black-5);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #f6fcff;
+  z-index: 2;
+}
+
+.card2 p {
+  font-size: 55px;
+  color: var(--blue-grey);
+  margin-top: 20px;
+}
+
+.card2 p span {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.card2 .cardHolder {
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.card2 .cardFields {
+  display: flex;
+  align-items: center;
+  margin-top: 21px;
+}
+
+.card2 .cardExpiry {
+  margin-left: 199px;
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.card2 .cardValues {
+  display: flex;
+  align-items: center;
+}
+
+.card2 .holderName {
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.card2 .expiryDate {
+  margin-left: 155px;
+  font-size: 17px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.section2Container .card3 {
+  position: absolute;
+  top: 50px;
+  left: 1021px;
+  width: 499.6px;
+  height: 298.4px;
+
+  padding: 60px 49px 59.4px 41.6px;
+  border-radius: 32.5px;
+  box-shadow: 0 3px 21px 0 var(--black-5);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+  z-index: 3;
+}
+
+.card3 h2 {
+  width: 393px;
+  margin: 0 16px 14px 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.card3 p {
+  width: 409px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+/* CSS for section 3 */
+
+.section3Container h2 {
+  margin: 0 0 6px 774px;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--dark-forest-green);
+  position: relative;
+}
+
+.section3Container h6 {
+  margin: 0 0 0 892px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  color: var(--dark-forest-green);
+}
+
+.section3Container .stepsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3Container .stepsContainer .stepBlock {
+  text-align: center;
+}
+
+.section3Container .stepBlock .figure1 {
+  width: 60px;
+  height: 60px;
+  margin: 54px 0 22px 235px;
+}
+
+.section3Container .stepBlock .figure2 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 82px 0 22px 247px;
+}
+
+.section3Container .figure2 .download {
+  position: absolute;
+  top: -32px;
+  left: 23px;
+}
+
+.section3Container .stepBlock .figure3 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 82px 0 22px 184px;
+}
+
+.section3Container .timerValue {
+  width: 42px;
+  position: absolute;
+  top: 11px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section3Container .timerValue .value {
+  width: 32px;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4.2px;
+  text-align: center;
+  color: var(--cerulean);
+}
+
+.section3Container .timerValue .min {
+  display: flex;
+  align-items: center;
+}
+
+.section3Container .timerValue .minutes {
+  width: 24px;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: var(--cerulean);
+}
+
+.section3Container .stepBlock .step {
+  display: flex;
+  margin-left: 137px;
+  margin-top: 34px;
+}
+
+.section3Container .stepBlock .step2MarginLeft {
+  margin-left: 175px;
+}
+
+.section3Container .stepBlock .step2ContentMarginLeft {
+  margin-left: 125px;
+  width: 303px;
+}
+
+.section3Container .stepBlock .step3MarginLeft {
+  margin-left: 134px;
+}
+
+.section3Container .stepBlock .step3ContentMarginLeft {
+  margin-left: 81px;
+}
+
+.section3Container .stepBlock .stepNo {
+  width: 55px;
+  height: 55px;
+  margin: 0 24px 0 0;
+  border-radius: 50%;
+  padding: 16px 25px 15px 21px;
+  background-color: var(--cerulean);
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+
+.section3Container .stepBlock .stepName {
+  width: 185px;
+  height: 24px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.section3Container .stepBlock p {
+  width: 325px;
+  margin-left: 108px;
+  margin-top: 21px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.section3Container button {
+  width: 330px;
+  height: 65px;
+  margin: 39px 85px 0 811px;
+  padding: 22px 77px 21px;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.06;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border: hidden;
+  cursor: pointer;
+}
+
+.btnCerulean {
+  background-color: var(--cerulean);
+}
+
+/* CSS for section4 */
+
+.section4Container {
+  margin-top: 129px;
+}
+
+.section4Container h2 {
+  margin: 0 0 6px 774px;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  color: var(--dark-forest-green);
+  position: relative;
+}
+
+.section4Container h6 {
+  margin: 0 0 0 892px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  color: var(--dark-forest-green);
+}
+
+.section4Container .stepsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section4Container .stepsContainer .stepBlock {
+  text-align: center;
+}
+
+.section4Container .stepBlock .figure1 {
+  width: 60px;
+  height: 60px;
+  margin: 54px 0 22px 235px;
+}
+
+.section4Container .stepBlock .figure2 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 82px 0 22px 247px;
+}
+
+.section4Container .figure2 .download {
+  position: absolute;
+  top: -32px;
+  left: 23px;
+}
+
+.section4Container .stepBlock .figure3 {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 82px 0 22px 184px;
+}
+
+.section4Container .timerValue {
+  width: 42px;
+  position: absolute;
+  top: 11px;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section4Container .timerValue .value {
+  width: 32px;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 4.2px;
+  text-align: center;
+  color: var(--dark-lime-green);
+}
+
+.section4Container .timerValue .min {
+  display: flex;
+  align-items: center;
+}
+
+.section4Container .timerValue .minutes {
+  width: 24px;
+  font-size: 10px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: var(--dark-lime-green);
+}
+
+.section4Container .stepBlock .step {
+  display: flex;
+  margin-left: 137px;
+  margin-top: 34px;
+}
+
+.section4Container .stepBlock .step2MarginLeft {
+  margin-left: 175px;
+}
+
+.section4Container .stepBlock .step2ContentMarginLeft {
+  margin-left: 125px;
+  width: 320px;
+}
+
+.section4Container .stepBlock .step3MarginLeft {
+  margin-left: 134px;
+}
+
+.section4Container .stepBlock .step3ContentMarginLeft {
+  margin-left: 81px;
+}
+
+.section4Container .stepBlock .stepNo {
+  width: 55px;
+  height: 55px;
+  margin: 0 24px 0 0;
+  padding: 16px 22px 15px 21px;
+  border-radius: 10px;
+  background-color: var(--dark-lime-green);
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.section4Container .stepBlock .stepName {
+  width: 185px;
+  height: 24px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.section4Container .stepBlock p {
+  width: 325px;
+  margin-left: 108px;
+  margin-top: 21px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.section4Container button {
+  width: 330px;
+  height: 65px;
+  margin: 39px 85px 0 811px;
+  padding: 22px 77px 21px;
+  border-radius: 50px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.06;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  border: hidden;
+  cursor: pointer;
+}
+
+.btnGreen {
+  background-color: var(--dark-lime-green);
+}
+
+/* CSS for section 5 */
+
+.section5Container {
+  display: flex;
+  margin-top: 99px;
+}
+
+.section5Container figure img {
+  width: 720px;
+  height: 560px;
+  margin-left: 189px;
+}
+
+.section5Container .contentContainer {
+  width: 648px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 73px;
+}
+
+.section5Container h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.section5Container h3 {
+  display: flex;
+  align-items: center;
+}
+
+.section5Container h3 span {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+  margin-left: 10px;
+}
+
+.section5Container p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.section5Container .btnContainer {
+  width: 580px;
+  height: 120px;
+  margin-top: 61px;
+  padding: 28px 35px 27px 36px;
+  border-radius: 30px;
+  box-shadow: 0 3px 26px 0 rgba(0, 0, 0, 0.08);
+  background-color: #ffffff;
+}
+
+.btnContainer span {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.btnContainer button {
+  margin: 0 0 0 34px;
+  padding: 31px 73px 31px 73px;
+  border: hidden;
+  border-radius: 50px;
+  background-color: var(--cerulean);
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* CSS for section 6 */
+
+.dogecoinContainer {
+  display: flex;
+  margin-top: 129px;
+}
+
+.dogecoinContainer .connection {
+  padding-top: 81px;
+  margin-left: 272px;
+  border-radius: 11px;
+  width: 281px;
+  height: 315px;
+  text-align: center;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+}
+
+.connection .decentral {
+  margin-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decentral span {
+  margin-left: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.dogecoinContainer .definition {
+  margin-left: 30px;
+  padding: 32px 17px 27px 18px;
+  width: 597px;
+  height: 315px;
+  border-radius: 20px;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+}
+
+.definition h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--dark-forest-green);
+}
+
+.definition p {
+  margin-top: 20px;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.dogecoinContainer .relation {
+  margin-left: 30px;
+  padding-top: 81px;
+  width: 281px;
+  height: 315px;
+  border-radius: 11px;
+  text-align: center;
+  box-shadow: 0 3px 21px 0 rgba(0, 0, 0, 0.04);
+  border: solid 1px rgba(99, 118, 150, 0.2);
+  background-color: #ffffff;
+}
+
+.relation .peer {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.peer span {
+  margin-left: 10px;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
