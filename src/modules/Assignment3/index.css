@@ -2,7 +2,7 @@
   width: 1805px;
   margin: 0 auto;
   overflow: hidden;
-  background-image: linear-gradient(to bottom, var(--ice-blue), #ffffff 61%);
+  /* background-image: linear-gradient(to bottom, var(--ice-blue), #ffffff 61%); */
 }
 
 /* CSS for header section */
@@ -521,6 +521,17 @@
 
 /* CSS for section 3 */
 
+.section3Container {
+  position: relative;
+}
+
+.section3Container .background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
 .section3Container h2 {
   margin: 0 0 6px 774px;
   font-family: "Rubik", sans-serif;
@@ -970,7 +981,7 @@
   color: var(--blue-grey);
 }
 
-.section5Container .btnContainer {
+.btnContainer {
   width: 580px;
   height: 120px;
   margin-top: 61px;
@@ -1114,4 +1125,272 @@
   letter-spacing: normal;
   text-align: left;
   color: var(--dark-forest-green);
+}
+
+/* CSS for section 7 */
+
+.whereDogecoinContainer {
+  margin-left: 413px;
+  margin-top: 114px;
+}
+
+.whereDogecoinContainer h3 {
+  width: 656px;
+  height: 47px;
+  margin: 0 140px 20px 111px;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--dark-forest-green);
+}
+
+.whereDogecoinContainer p {
+  width: 856px;
+  height: 63px;
+  margin: 20px 40.5px 67px 10.5px;
+  font-family: "NunitoSans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--blue-grey);
+}
+
+.whereDogecoinContainer .imagesContainer {
+  display: flex;
+}
+
+.imagesContainer .clothesWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.clothesWrapper span {
+  width: 201px;
+  height: 19px;
+  margin: 15px 24px 0 25px;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.13;
+  letter-spacing: 4px;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+/* CSS for section 8 */
+
+.isDogecoinContainer {
+  display: flex;
+  margin-top: 155px;
+}
+
+.isDogecoinContainer figure img {
+  width: 720px;
+  height: 560px;
+  margin-left: 189px;
+}
+
+.isDogecoinContainer .contentContainer {
+  width: 648px;
+  margin-top: 123px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 73px;
+}
+
+.isDogecoinContainer h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark-forest-green);
+}
+
+.isDogecoinContainer p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--blue-grey);
+}
+
+.isDogecoinContainer .btnContainer {
+  margin-top: 20px;
+}
+
+/* CSS for footer section */
+
+.footerContainer {
+  width: 1233px;
+  margin: auto;
+  height: 450px;
+  margin-top: 65px;
+}
+
+.footerContainer .Link ul {
+  list-style-type: none;
+}
+
+.footerContainer .Link ul a {
+  text-decoration: none;
+}
+
+.footerContainer .sectionA .Link1 li {
+  margin-right: 92px;
+}
+
+.footerContainer .sectionA .Link2 li {
+  margin-right: 83px;
+}
+
+footer {
+  padding: 2rem 1.5rem;
+}
+
+.footerContainer .sectionA {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.footerContainer .sectionA .sectionALeft img {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footerContainer .sectionA .sectionALeft p {
+  width: 300px;
+  height: 22px;
+  font-size: 14px;
+  font-family: AkkuratPro-Regular;
+  opacity: 0.5;
+  line-height: 1.57;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionARight {
+  width: 800px;
+  display: flex;
+  margin-left: 296px;
+}
+
+.socialFlex {
+  display: flex;
+  align-items: center;
+}
+
+.socialFlex img {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+.socialFlex img:first-child {
+  width: 20px;
+  height: 20px;
+}
+
+.footerContainer .sectionA ul li {
+  width: 100px;
+  height: 24px;
+  margin: 0 122px 16px 0;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  letter-spacing: 1px;
+}
+
+.footerContainer .sectionA ul li:first-child {
+  text-transform: uppercase;
+}
+
+.footerContainer .sectionA ul li a {
+  width: 100px;
+  height: 102px;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 2.13;
+  letter-spacing: normal;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionB {
+  margin-top: 46px;
+}
+
+.footerContainer .sectionB .sectionBLink {
+  display: flex;
+}
+
+.sectionB .sectionBLink ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.footerContainer .sectionB .sectionBLink ul li a {
+  width: 200px;
+  height: 22px;
+  margin-right: 35px;
+  text-decoration: none;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  letter-spacing: normal;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionB .sectionBLink .select {
+  display: flex;
+  margin-left: 376px;
+}
+
+.footerContainer .sectionB .sectionBLink .select p {
+  width: 67px;
+  height: 22px;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--blue-grey);
+}
+
+.footerContainer .sectionB .sectionBLink .select select {
+  width: 75px;
+  height: 22px;
+  margin-top: -1px;
+  border: hidden;
+  background-color: #fff;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.footerContainer .sectionB > p {
+  width: 1132px;
+  height: 44px;
+  margin: 58px 18px 0 0;
+  opacity: 0.5;
+  font-family: AkkuratPro-Regular;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--blue-grey);
 }

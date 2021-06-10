@@ -5,6 +5,7 @@ import BuySellButton from "../../components/buySellButton";
 const BuyDogecoin = () => {
   return (
     <div className={"section3Container"}>
+      <img className={"background"} src={"Assignment3Images/background.svg"} alt={"background"}/>
       <BuySellHeader
         heading1={"How to Buy Dogecoin"}
         heading2={"Only 3 simple steps"}

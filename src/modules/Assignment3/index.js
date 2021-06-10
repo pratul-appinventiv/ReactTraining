@@ -6,7 +6,9 @@ import BuyDogecoin from "./BuyDogecoin";
 import SellDogecoin from "./SellDogecoin";
 import WhyDogecoin from "./WhyDogecoin";
 import DefineDogecoin from "./DefineDogecoin";
-
+import WhereDogecoin from "./WhereDogecoin"
+import IsDogecoin from "./IsDogecoin"
+import Footer from "./Footer"
 import "./index.css";
 
 const Assignment3 = () => {
@@ -19,6 +21,9 @@ const Assignment3 = () => {
       <SellDogecoin />
       <WhyDogecoin />
       <DefineDogecoin />
+      <WhereDogecoin/>
+      <IsDogecoin/>
+      <Footer/>
     </div>
   );
 };
