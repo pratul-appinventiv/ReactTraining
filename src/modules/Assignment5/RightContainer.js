@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Cards from "./Cards";
+import Table1 from "./Table1";
 import Paragraph from "./Paragraph";
 import Stepper from "./Stepper";
 import Footer from "./Footer";
@@ -32,7 +33,7 @@ const RightContainer = () => {
       <div className={classes.contentWrapper}>
         <div className={classes.contentContainer}>
           <Cards />
-
+          <Table1/>
           <Paragraph />
           <Stepper />
           <Footer />
