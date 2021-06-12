@@ -1,9 +1,9 @@
 import React from "react";
-import Assignment5 from "./modules/Assignment5";
+import Assignment6 from "./modules/Assignment6";
 import "./App.css";
 
 export default class App extends React.Component {
   render() {
-    return <Assignment5/>;
+    return <Assignment6/>;
   }
 }
