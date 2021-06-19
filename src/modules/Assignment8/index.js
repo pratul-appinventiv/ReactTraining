@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import EntryForm from "./components/FormModal";
 import DeleteModal from "./components/DeleteModal";
+import CircularProgress from "@material-ui/core/CircularProgress";
 import "./index.css";
 
 const Assignment8 = () => {
@@ -9,6 +10,9 @@ const Assignment8 = () => {
   const [isFormModalOpen, setFormModalOpen] = useState(false);
   const [formType, setFormType] = useState("");
   const [isDeleteModalOpen, setDeleteModalOpen] = useState(false);
+  const [doSearch, setDoSearch] = useState(false);
+  const [searchedData, setSearchedData] = useState([]);
+  const [isLoader, setIsLoader] = useState(false);
 
   const handleOnEdit = (data, ind) => {
     Data[ind] = data;
@@ -20,6 +24,25 @@ const Assignment8 = () => {
       return ind !== index;
     });
     setData(data);
+  };
+
+  const handleSearch = (e) => {
+    if (e.target.value === "") setDoSearch(false);
+    else {
+      setIsLoader(true);
+      setDoSearch(true);
+      let searchValue = e.target.value;
+      setTimeout(() => {
+        let customData = Data.filter((curr) => {
+          return (
+            curr.fname.indexOf(searchValue) > -1 ||
+            curr.email.indexOf(searchValue) > -1
+          );
+        });
+        setSearchedData(customData);
+        setIsLoader(false);
+      }, 1000);
+    }
   };
 
   return (
@@ -40,6 +63,9 @@ const Assignment8 = () => {
       <EntryForm
         index={arrayIndex}
         formType={formType}
+        setFormType={() => {
+          setFormType("");
+        }}
         formModalState={isFormModalOpen}
         setFormModalState={() => {
           setFormModalOpen(false);
@@ -56,51 +82,99 @@ const Assignment8 = () => {
         type={"text"}
         id={"search"}
         name={"search"}
-        placeholder={"Search item"}
+        placeholder={"Search by First Name or Email Id"}
+        onKeyUp={handleSearch}
       />
       <div className={"tableContainer"}>
-        <table>
-          <thead>
-            <tr>
-              <th>{"First Name"}</th>
-              <th>{"Last Name"}</th>
-              <th>{"Email Id"}</th>
-              <th>{"Mobile Number"}</th>
-              <th>{"Action"}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {Data?.map((curr, ind) => {
-              return (
-                <tr key={ind}>
-                  <td>{curr.fname}</td>
-                  <td>{curr.lname}</td>
-                  <td>{curr.email}</td>
-                  <td>{curr.phone}</td>
-                  <td className={"styleIcons"}>
-                    <i
-                      onClick={() => {
-                        setFormModalOpen(true);
-                        setFormType("Edit");
-                        setArrayIndex(ind);
-                      }}
-                      className="fa fa-pencil-square-o"
-                      aria-hidden="true"
-                    ></i>
-                    <i
-                      onClick={() => {
-                        setDeleteModalOpen(true);
-                        setArrayIndex(ind);
-                      }}
-                      className="fa fa-trash"
-                      aria-hidden="true"
-                    ></i>
-                  </td>
+        {isLoader ? (
+          <div className={"styleLoader"}>
+            <CircularProgress color="secondary" />
+          </div>
+        ) : (
+          <table>
+            <thead>
+              {Data.length !== 0 && (
+                <tr>
+                  <th>{"First Name"}</th>
+                  <th>{"Last Name"}</th>
+                  <th>{"Email Id"}</th>
+                  <th>{"Mobile Number"}</th>
+                  <th>{"Action"}</th>
                 </tr>
-              );
-            })}
-          </tbody>
-        </table>
+              )}
+            </thead>
+
+            <tbody>
+              {doSearch ? (
+                searchedData.length > 0 ? (
+                  searchedData?.map((curr, ind) => {
+                    return (
+                      <tr key={ind}>
+                        <td>{curr.fname}</td>
+                        <td>{curr.lname}</td>
+                        <td>{curr.email}</td>
+                        <td>{curr.phone}</td>
+                        <td className={"styleIcons"}>
+                          <i
+                            onClick={() => {
+                              setFormModalOpen(true);
+                              setFormType("Edit");
+                              setArrayIndex(ind);
+                            }}
+                            className="fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></i>
+                          <i
+                            onClick={() => {
+                              setDeleteModalOpen(true);
+                              setArrayIndex(ind);
+                            }}
+                            className="fa fa-trash"
+                            aria-hidden="true"
+                          ></i>
+                        </td>
+                      </tr>
+                    );
+                  })
+                ) : (
+                  <tr>
+                    <td colSpan="5">{"No records found"}</td>
+                  </tr>
+                )
+              ) : (
+                Data?.map((curr, ind) => {
+                  return (
+                    <tr key={ind}>
+                      <td>{curr.fname}</td>
+                      <td>{curr.lname}</td>
+                      <td>{curr.email}</td>
+                      <td>{curr.phone}</td>
+                      <td className={"styleIcons"}>
+                        <i
+                          onClick={() => {
+                            setFormModalOpen(true);
+                            setFormType("Edit");
+                            setArrayIndex(ind);
+                          }}
+                          className="fa fa-pencil-square-o"
+                          aria-hidden="true"
+                        ></i>
+                        <i
+                          onClick={() => {
+                            setDeleteModalOpen(true);
+                            setArrayIndex(ind);
+                          }}
+                          className="fa fa-trash"
+                          aria-hidden="true"
+                        ></i>
+                      </td>
+                    </tr>
+                  );
+                })
+              )}
+            </tbody>
+          </table>
+        )}
       </div>
       <DeleteModal
         index={arrayIndex}

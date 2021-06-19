@@ -12,7 +12,11 @@ const DeleteModal = (props) => {
   };
 
   return (
-    <Modal className={"deleteModal"} isOpen={props.modalState}>
+    <Modal
+      className={"deleteModal"}
+      isOpen={props.modalState}
+      onRequestClose={() => props.setModalState()}
+    >
       <div className={"deleteModalContainer"}>
         <h2>{"Are you sure you want to delete the entry"}</h2>
         <div className={"btnContainer"}>

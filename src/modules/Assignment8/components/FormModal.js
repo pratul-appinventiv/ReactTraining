@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 
 const EntryForm = (props) => {
@@ -8,6 +8,10 @@ const EntryForm = (props) => {
     email: "",
     phone: "",
   });
+
+  useEffect(() => {
+    if (props.formType === "Edit") setValues(props.data[props.index]);
+  }, [props.formType]);
 
   const [Errors, setErrors] = useState({
     fnameError: "",
@@ -77,6 +81,8 @@ const EntryForm = (props) => {
       });
       props.setData([...props.data], customData);
       props.setFormModalState();
+      props.setFormType();
+      setValues({ ...values, fname: "", lname: "", email: "", phone: "" });
     }
 
     setErrors({
@@ -86,8 +92,6 @@ const EntryForm = (props) => {
       emailError: errors.emailError,
       phoneError: errors.phoneError,
     });
-
-    setValues({ ...values, fname: "", lname: "", email: "", phone: "" });
   };
 
   const handleEdit = () => {
@@ -130,6 +134,8 @@ const EntryForm = (props) => {
     if (isFormValid) {
       props.handleOnEdit(values, props.index);
       props.setFormModalState();
+      props.setFormType();
+      setValues({ ...values, fname: "", lname: "", email: "", phone: "" });
     }
 
     setErrors({
@@ -153,6 +159,7 @@ const EntryForm = (props) => {
     });
 
     props.setFormModalState();
+    props.setFormType();
   };
 
   return (
@@ -179,7 +186,7 @@ const EntryForm = (props) => {
               type={"text"}
               id={"fname"}
               name={"fname"}
-              placeholder={props.data[props.index].fname}
+              value={values.fname}
               onChange={handleFname}
             />
           )}
@@ -201,7 +208,7 @@ const EntryForm = (props) => {
               type={"text"}
               id={"lname"}
               name={"lname"}
-              placeholder={props.data[props.index].lname}
+              value={values.lname}
               onChange={handleLname}
             />
           )}
@@ -223,7 +230,7 @@ const EntryForm = (props) => {
               type={"email"}
               id={"email"}
               name={"email"}
-              placeholder={props.data[props.index].email}
+              value={values.email}
               onChange={handleEmail}
             />
           )}
@@ -245,7 +252,7 @@ const EntryForm = (props) => {
               type={"number"}
               id={"phone"}
               name={"phone"}
-              placeholder={props.data[props.index].phone}
+              value={values.phone}
               onChange={handlePhone}
             />
           )}
