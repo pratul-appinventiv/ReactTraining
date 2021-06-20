@@ -54,6 +54,9 @@ const useStyles = makeStyles({
     backgroundColor: "#388538",
     color: "#fff",
     marginTop: "10px",
+    "&:hover": {
+      backgroundColor: "#275d27",
+    },
   },
 
   fieldsContainer: {
@@ -135,8 +138,8 @@ const Cards = () => {
           </Select>
         </div>
         <div className={classes.fieldsContainer}>
-          <CountrySelect />
-          <CountrySelect />
+          <CountrySelect id="country-select-demo-1" />
+          <CountrySelect id="country-select-demo-2" />
         </div>
         <Button
           className={classes.search}
@@ -163,7 +166,7 @@ const Cards = () => {
         <Button
           variant={"contained"}
           startIcon={<PersonAddIcon />}
-          size="Large"
+          size="large"
           className={classes.card2SignUp}
         >
           {"SIGN UP FREE"}

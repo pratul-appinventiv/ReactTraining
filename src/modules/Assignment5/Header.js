@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import {
   Switch,
@@ -39,6 +39,9 @@ const useStyles = makeStyles({
     backgroundColor: "#388538",
     color: "#fff",
     marginRight: "10px",
+    "&:hover": {
+      backgroundColor: "#275d27",
+    },
   },
 
   buttons: {
@@ -49,16 +52,23 @@ const useStyles = makeStyles({
 
 const Header = () => {
   const classes = useStyles();
+  const [switchState, setSwitchState] = useState("OFF");
+
+  const handleSwitch = (e) => {
+    if (e.target.checked) setSwitchState("ON");
+    else setSwitchState("0FF");
+  };
 
   return (
     <div className={classes.headerWrapper}>
       <div className={classes.headerContainer}>
         <div className={"switch"}>
           <FormControlLabel
-            value={"On"}
+            value={switchState}
             control={<Switch size={"small"} className={classes.switch} />}
-            label={"On"}
+            label={switchState}
             labelPlacement={"bottom"}
+            onChange={handleSwitch}
           />
         </div>
         <div className={classes.buttons}>

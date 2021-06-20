@@ -6,6 +6,8 @@ import {
   Typography,
   Button,
   Divider,
+  List,
+  ListItem,
 } from "@material-ui/core";
 import LanguageIcon from "@material-ui/icons/Language";
 import TwitterIcon from "@material-ui/icons/Twitter";
@@ -62,68 +64,120 @@ const Footer = () => {
           &copy; {"2021 Blue Sunday Limited"}
         </Typography>
         <div className={classes.linkContainer}>
-          <Typography className={classes.links}>
-            <Link href={"#"} underline={"always"}>
-              {"About"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Terms of service"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Fees"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Contact us"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Law Enforcement Inquiries"}
-            </Link>
-          </Typography>
+          <List disablePadding>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{"About"}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Terms of service"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{"Fees"}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Contact us"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Law Enforcement Inquiries"}
+                </Typography>
+              </Link>
+            </ListItem>
+          </List>
 
-          <Typography className={classes.links}>
-            <Link href={"#"} underline={"always"}>
-              {"Security bounty"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Affiliate"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Statistics"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"API docs"}
-            </Link>
-          </Typography>
+          <List>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Security Bounty"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{"Affiliate"}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Statistics"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{"API Docs"}</Typography>
+              </Link>
+            </ListItem>
+          </List>
 
-          <Typography className={classes.links}>
-            <Link href={"#"} underline={"always"}>
-              {"Local Bitcoins Alternative"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Monero News"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Knowledge"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"Monero Block Explorer"}
-            </Link>
-          </Typography>
+          <List>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Local Bitcoin Alternatives"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Monero News"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{"Knowledge"}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Monero Block Explorer"}
+                </Typography>
+              </Link>
+            </ListItem>
+          </List>
 
-          <Typography className={classes.links}>
-            <Link href={"#"} underline={"always"}>
-              {"Tor hidden service"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {" I2P"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {" B32 I2P"}
-            </Link>
-            <Link href={"#"} underline={"always"}>
-              {"AgoraDesk"}
-            </Link>
-          </Typography>
+          <List>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>
+                  {"Top hidden service"}
+                </Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{" I2P"}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{" B32 I2P"}</Typography>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"} underline={"always"}>
+                <Typography className={classes.links}>{"AgoraDesk"}</Typography>
+              </Link>
+            </ListItem>
+          </List>
         </div>
         <div>
           <Button className={classes.langBtn}>

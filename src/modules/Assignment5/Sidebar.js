@@ -1,5 +1,5 @@
 import React from "react";
-import { Drawer, Link, makeStyles } from "@material-ui/core";
+import { Drawer, Link, List, ListItem, makeStyles } from "@material-ui/core";
 import PolymerIcon from "@material-ui/icons/Polymer";
 import PinterestIcon from "@material-ui/icons/Pinterest";
 import TrackChangesRoundedIcon from "@material-ui/icons/TrackChangesRounded";
@@ -26,7 +26,6 @@ const useStyles = makeStyles({
   },
   iconColor: {
     color: "#fff",
-    marginBottom: "20px",
     fontSize: "34px",
   },
   sideBarIcon: {
@@ -72,39 +71,63 @@ const Sidebar = () => {
           </svg>
         </Link>
         <div className={classes.sideBarBackground}>
-          <Link href={"#"}>
-            <PolymerIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <PinterestIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <TrackChangesRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <PostAddRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <HelpOutlineRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <AdjustRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <ForumRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <LibraryBooksRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <NewReleasesRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <InfoRoundedIcon className={classes.iconColor} />
-          </Link>
-          <Link href={"#"}>
-            <CopyrightIcon className={classes.iconColor} />
-          </Link>
+          <List disablePadding>
+            <ListItem>
+              <Link href={"#"}>
+                <PolymerIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <PinterestIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <TrackChangesRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <PostAddRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <HelpOutlineRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <AdjustRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <ForumRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <LibraryBooksRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <NewReleasesRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <InfoRoundedIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href={"#"}>
+                <CopyrightIcon className={classes.iconColor} />
+              </Link>
+            </ListItem>
+          </List>
         </div>
       </Drawer>
     </div>
