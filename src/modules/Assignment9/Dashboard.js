@@ -58,7 +58,10 @@ function Dashboard() {
                   </Typography>
                   <Link
                     className={classes.styleLink}
-                    to={`dashboard/details${curr.id}`}
+                    to={{
+                      pathname: `dashboard/details${curr.id}`,
+                      state: Data,
+                    }}
                   >
                     <Button
                       className={classes.styleButton}

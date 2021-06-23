@@ -34,6 +34,8 @@ function Login() {
 
   const history = useHistory();
 
+  if (localStorage.getItem("accessToken") !== null) history.push("/dashboard");
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });

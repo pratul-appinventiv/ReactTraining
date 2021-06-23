@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Box, Paper, Typography, makeStyles } from "@material-ui/core";
 import Navbar from "./Navbar";
-import Data from "../Data";
 
 const useStyles = makeStyles({
   styleCardContainer: {
@@ -30,6 +29,7 @@ const useStyles = makeStyles({
 });
 
 function CardDetails(props) {
+  const Data = props.location.state;
   const ind = props.match.params.id - 1;
   const { src, title, price, screenSize, camera, battery, ram } = Data[ind];
   const classes = useStyles();
