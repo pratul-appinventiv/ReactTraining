@@ -4,7 +4,7 @@ import thunk from "redux-thunk";
 import { createLogger } from "redux-logger";
 
 const logger = createLogger();
-const multipleMiddleWares = compose(applyMiddleware(thunk, logger));
-const store = createStore(rootReducer, multipleMiddleWares);
+const multipleMiddleWares = compose(applyMiddleware(thunk, logger,));
+const store = createStore(rootReducer,multipleMiddleWares);
 
 export default store;
