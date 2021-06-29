@@ -1,13 +1,29 @@
 import React, { useReducer } from "react";
 import ColorsDetails from "./ColorsDetails";
-import { initialState, Reducer } from "./reducers";
-
-export const AppContext = React.createContext(initialState);
+import {
+  initialColorState,
+  initialThemeState,
+  colorReducer,
+  themeReducer,
+} from "./reducers";
+import { AppContext } from "./context";
 
 function Assignment13() {
-  const [newState, dispatch] = useReducer(Reducer, initialState);
+  const [colorState, colorDispatch] = useReducer(
+    colorReducer,
+    initialColorState
+  );
+  const [themeState, themeDispatch] = useReducer(
+    themeReducer,
+    initialThemeState
+  );
   return (
-    <AppContext.Provider value={[newState, dispatch]}>
+    <AppContext.Provider
+      value={{
+        appState: { colorState, themeState },
+        dispatch: { colorDispatch, themeDispatch },
+      }}
+    >
       <ColorsDetails />
     </AppContext.Provider>
   );

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { AppContext } from "../index";
+import { AppContext } from "../context";
 import {
   Grid,
   Box,
@@ -61,20 +61,20 @@ const useStyles = makeStyles({
 
 function ColorsDetails() {
   const classes = useStyles();
-  const [newState, dispatch] = useContext(AppContext);
-  const { colorsData, Theme, themeName } = newState;
+  const { appState, dispatch } = useContext(AppContext);
+  const { colorState, themeState } = appState;
   return (
-    <Box style={Theme} className={classes.styleMainContainer}>
+    <Box style={themeState.Theme} className={classes.styleMainContainer}>
       <Box className={classes.styleSwitchContainer}>
         <FormControlLabel
           value="bottom"
           control={
             <Switch
               color="primary"
-              onClick={() => dispatch({ type: "CHANGE_THEME" })}
+              onClick={() => dispatch.themeDispatch({ type: "CHANGE_THEME" })}
             />
           }
-          label={themeName}
+          label={themeState.themeName}
           labelPlacement="bottom"
         />
       </Box>
@@ -86,7 +86,7 @@ function ColorsDetails() {
         {"Color Details"}
       </Typography>
       <Grid className={classes.styleCardsContainer} container spacing={6}>
-        {colorsData?.map((curr, ind) => (
+        {colorState.colorsData?.map((curr, ind) => (
           <Grid key={ind} item lg={4} sm={6} xs={12}>
             <Card className={classes.styleCard}>
               <Box
@@ -132,7 +132,9 @@ function ColorsDetails() {
           variant={"contained"}
           size={"large"}
           color={"secondary"}
-          onClick={() => dispatch({ type: "CHANGE_COLORS_TO_ORANGE" })}
+          onClick={() =>
+            dispatch.colorDispatch({ type: "CHANGE_COLORS_TO_ORANGE" })
+          }
         >
           {"Change Colors to Orange"}
         </Button>
@@ -140,7 +142,9 @@ function ColorsDetails() {
           variant={"contained"}
           size={"large"}
           color={"secondary"}
-          onClick={() => dispatch({ type: "CHANGE_COLORS_TO_DEFAULT" })}
+          onClick={() =>
+            dispatch.colorDispatch({ type: "CHANGE_COLORS_TO_DEFAULT" })
+          }
         >
           {"Change Colors to Default"}
         </Button>

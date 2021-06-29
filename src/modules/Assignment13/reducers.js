@@ -1,15 +1,19 @@
 import Data from "./Data";
 
-export const initialState = {
+export const initialColorState = {
   colorsData: Data,
+};
+
+export const initialThemeState = {
   Theme: { color: "black", backgroundColor: "blue" },
   themeName: "CHANGE TO DARK THEME",
 };
 
-export const Reducer = (state, action) => {
+export const colorReducer = (state, action) => {
   switch (action.type) {
     case "CHANGE_COLORS_TO_ORANGE":
       return {
+        ...state,
         colorsData: Data.map((curr) => {
           return {
             ...curr,
@@ -19,20 +23,24 @@ export const Reducer = (state, action) => {
             year: "2006",
           };
         }),
-        Theme: { ...state.Theme },
-        themeName: state.themeName,
       };
 
     case "CHANGE_COLORS_TO_DEFAULT":
       return {
+        ...state,
         colorsData: Data,
-        Theme: { ...state.Theme },
-        themeName: state.themeName,
       };
 
+    default:
+      return state;
+  }
+};
+
+export const themeReducer = (state, action) => {
+  switch (action.type) {
     case "CHANGE_THEME":
       return {
-        colorsData: [...state.colorsData],
+        ...state,
         Theme:
           state.Theme.backgroundColor === "black"
             ? { color: "black", backgroundColor: "blue" }
